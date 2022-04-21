@@ -21,7 +21,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: amsy810/echo-nginx:v2.0
+    image: nginx
     resources:
       limits:
         memory: "128Mi"
