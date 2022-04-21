@@ -9,7 +9,9 @@ spec:
   - host: example.com
     http:
       paths:
-      - backend:
+      - pathType: Prefix
+        path: "/"
+        backend:
           service:
             name: test-01-nginx
             port:
