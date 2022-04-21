@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Service
 metadata:
-  name: test-01-ingress
+  name: test-01-svc
 spec:
   type: NodePort
   selector:
