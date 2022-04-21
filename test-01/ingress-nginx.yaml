@@ -5,14 +5,8 @@ metadata:
   labels:
     name: test-01-ingress
 spec:
-  rules:
-  - host: example.com
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: test-01-nginx
-            port:
-              number: 10080
+  defaultBackend:
+    service:
+      name: test-01-app
+      port:
+        number: 10080
