@@ -21,7 +21,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:1.17.1
     resources:
       limits:
         memory: "128Mi"
