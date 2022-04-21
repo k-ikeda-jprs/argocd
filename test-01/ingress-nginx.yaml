@@ -7,6 +7,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: test-app
+      name: test-01-app
       port:
         number: 10080
