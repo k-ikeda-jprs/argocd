@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: test-01-ingress
+spec:
+  type: NodePort
+  selector:
+    app: test-01-nginx
+  ports:
+  - name: "http-port"
+    protocol: "TCP"
+    port: 10080
+    targetPort: 80
+---
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: test-01-app
+  labels:
+    name: test-01-nginx
+spec:
+  containers:
+  - name: nginx
+    image: amsy810/echo-nginx:v2.0
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
