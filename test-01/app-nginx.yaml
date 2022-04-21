@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: test-01-app
   labels:
-    name: test-01-app
+    name: test-app
 spec:
   containers:
   - name: nginx-container
-    image: nginx
+    image: amsy810/echo-nginx:v2.0
     resources:
       limits:
         memory: "128Mi"
