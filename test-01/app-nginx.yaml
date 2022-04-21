@@ -6,7 +6,7 @@ metadata:
     name: test-app
 spec:
   containers:
-  - name: nginx-container
+  - name: test-01-app
     image: amsy810/echo-nginx:v2.0
     resources:
       limits:
